@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html>
 <title>Euphoric Vortex</title>
+<style type="text/css">
+	body {
+		margin: 0;
+		padding: 0;
+	}
+	a {
+		color: #D44219;
+	}
+</style>
 <body>
 <div style="margin-left: auto; margin-right: auto; width: 70%;">
-<div style="margin-left: auto; margin-right: auto; width: 716px;"><img src="images/logo.png" /></div>
-<h1 style="text-align:center;display:none">Euphoric Vortex</h1>
-<p style="text-align:center">Wait for something pleasing to be here soon...</p>
-<p style="text-align:center"><a style="color: #D44219" onclick="javascript:playGame()" href="javascript:void(0)">Play version 0.0.1 of "Fluffy Madness"!</a></p>
+	<div style="margin-left: auto; margin-right: auto; width: 716px;"><img src="images/logo.png" /></div>
+	<h1 style="text-align:center;display:none">Euphoric Vortex</h1>
+	<p style="text-align:center">Wait for something pleasing to be here soon...</p>
+	<p style="text-align:center"><a onclick='javascript:bitlink("1olL6hw")' href="javascript:void(0)">Play first level of "Bongy Gob" (instructions in spanish)!</a>
+		<br /><a onclick='javascript:bitlink("1Ek1KHe")' href="javascript:void(0)">Play version 0.0.1 of "Freedy the Healer" (instructions in spanish)!</a>
+		<br /><a onclick="javascript:playGame()" href="javascript:void(0)">Play version 0.1.0 of "Fluffy Madness" (instructions in spanish)!</a>
+	</p>
 </div>
 <script>
+	function bitlink(bitly) {
+		window.location = "http://bit.ly/"+bitly;
+	}
 	function playGame() {
 		window.location.assign("bin/index.html");
 	}
