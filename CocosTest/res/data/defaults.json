@@ -1,0 +1,33 @@
+{
+	"ClientAIComponent" : {
+		"clienteYPos" : 63,
+		"interval" : 35,
+		"numCasillas" : 1,
+		"pedidoMaxSize" : 1,
+		"tiempoEsperaCliente" : 0
+	},
+	
+	"MonsterAIComponent" : {
+		"anchoMonstruos" : 80,
+		"interval" : 11
+	},
+	
+	"MonsterType" : {
+		"capacidad" : -1,
+		"funcParams" : [],
+		"idFunc" : 0,
+		"idImage" : 0,
+		"peso" : 1,
+		"puntaje" : 100
+	},
+	
+	"PlayLayer" : {
+		"clientSpaceHeight" : 200,
+		"counterSize" : 8,
+		"difficultyInterval" : 6,
+		"minAncho" : 60,
+		"pedidosSize" : 8,
+		"tiposDisponibles" : 1,
+		"vidas" : 3
+	}
+}

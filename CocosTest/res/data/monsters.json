@@ -1,0 +1,13 @@
+{	
+	"Rectangulo" : {
+		"idImage" : 1
+	},
+	
+	"Triangulo" : {
+		"idImage" : 2
+	},
+	
+	"Circulo" : {
+		"idImage" : 3
+	}
+}
