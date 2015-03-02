@@ -1,7 +1,17 @@
 {
+	"BackgroundLayer" : {
+		"color" : {
+			"r" : 51,
+			"g" : 204,
+			"b" : 255
+		},
+		"counterHeight" : 80,
+		"upperSpaceHeight" : 100
+	},
+	
 	"ClientAIComponent" : {
 		"clienteYPos" : 63,
-		"interval" : 35,
+		"interval" : 32,
 		"numCasillas" : 1,
 		"pedidoMaxSize" : 1,
 		"tiempoEsperaCliente" : 0
@@ -21,10 +31,14 @@
 		"puntaje" : 100
 	},
 	
+	"MusicComponent" : {
+		"interval" : 15
+	},
+	
 	"PlayLayer" : {
 		"clientSpaceHeight" : 200,
 		"counterSize" : 8,
-		"difficultyInterval" : 6,
+		"difficultyInterval" : 5,
 		"minAncho" : 60,
 		"pedidosSize" : 8,
 		"tiposDisponibles" : 1,

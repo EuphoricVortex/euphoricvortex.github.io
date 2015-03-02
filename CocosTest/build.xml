@@ -176,9 +176,11 @@
                 <file name="src/play/BackgroundLayer.js"/>
                 <file name="src/play/Client.js"/>
                 <file name="src/play/ClientAIComponent.js"/>
+                <file name="src/play/GUILayer.js"/>
                 <file name="src/play/Mnstricon.js"/>
                 <file name="src/play/Monster.js"/>
                 <file name="src/play/MonsterAIComponent.js"/>
+                <file name="src/play/MusicComponent.js"/>
                 <file name="src/play/PlayInputComponent.js"/>
                 <file name="src/play/PlayLayer.js"/>
                 <file name="src/play/PlayScene.js"/>
