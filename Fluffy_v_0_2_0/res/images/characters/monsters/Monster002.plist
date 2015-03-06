@@ -1648,11 +1648,11 @@
             <key>format</key>
             <integer>2</integer>
             <key>realTextureFileName</key>
-            <string>monster002.png</string>
+            <string>Monster002.png</string>
             <key>size</key>
             <string>{1024,1024}</string>
             <key>textureFileName</key>
-            <string>monster002.png</string>
+            <string>Monster002.png</string>
         </dict>
     </dict>
 </plist>
