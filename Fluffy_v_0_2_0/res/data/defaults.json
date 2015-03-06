@@ -1,16 +1,16 @@
 {
 	"BackgroundLayer" : {
 		"color" : {
-			"r" : 51,
-			"g" : 204,
-			"b" : 255
+			"r" : 242,
+			"g" : 214,
+			"b" : 162
 		},
-		"counterHeight" : 80,
-		"upperSpaceHeight" : 100
+		"counterHeight" : 60,
+		"upperSpaceHeight" : 170
 	},
 	
 	"ClientAIComponent" : {
-		"clienteYPos" : 63,
+		"clienteYPos" : 132,
 		"interval" : 32,
 		"numCasillas" : 1,
 		"pedidoMaxSize" : 1,
@@ -36,7 +36,7 @@
 	},
 	
 	"PlayLayer" : {
-		"clientSpaceHeight" : 200,
+		"clientSpaceHeight" : 250,
 		"counterSize" : 8,
 		"difficultyInterval" : 5,
 		"minAncho" : 60,

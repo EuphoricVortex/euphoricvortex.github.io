@@ -1,0 +1,22 @@
+{	
+	"Rectangulo" : {
+		"idImage" : 1
+	},
+	
+	"Triangulo" : {
+		"idImage" : 2
+	},
+	
+	"Circulo" : {
+		"idImage" : 3
+	},
+	
+	"Comodin" : {
+		"capacidad" : 5,
+		"funcParams" : [],
+		"idFunc" : 1,
+		"idImage" : 8,
+		"peso" : 50,
+		"puntaje" : 120
+	}
+}
