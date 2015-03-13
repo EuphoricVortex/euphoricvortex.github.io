@@ -7,28 +7,28 @@
             <key>screen0001</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,2},{100,73}}</string>
+                <string>{{2,2},{96,69}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{100,73}}</string>
+                <string>{{0,0},{96,69}}</string>
                 <key>sourceSize</key>
-                <string>{100,73}</string>
+                <string>{96,69}</string>
             </dict>
             <key>screen0000</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,77},{100,73}}</string>
+                <string>{{2,73},{96,69}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{100,73}}</string>
+                <string>{{0,0},{96,69}}</string>
                 <key>sourceSize</key>
-                <string>{100,73}</string>
+                <string>{96,69}</string>
             </dict>
         </dict>
         <key>metadata</key>
@@ -40,7 +40,7 @@
             <key>size</key>
             <string>{128,256}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:957eb8bbd127691519243ba24019dea6:b1a7f4477e72549172fd8f4a7b44caa9:9ee29ede6a541863f3cd4555403c1f71$</string>
+            <string>$TexturePacker:SmartUpdate:fe32247d3b23c1f891109d608125ed88:79701dd248d008486e77c912f12c26e5:9ee29ede6a541863f3cd4555403c1f71$</string>
             <key>textureFileName</key>
             <string>Screen.png</string>
         </dict>
