@@ -1,22 +1,56 @@
 {	
 	"Rectangulo" : {
+		"blocked" : false,
+		"color" : {
+			"r" : 115,
+			"g" : 217,
+			"b" : 151
+		},
+		"desc" : "Es una criatura muy alegre y juguetona. A pesar de su cornamenta, también es muy dócil y calmada.\n\nEfecto: Ninguno.\n\nObtenido desde el nivel 1.",
 		"idImage" : 1
 	},
 	
 	"Triangulo" : {
+		"blocked" : false,
+		"color" : {
+			"r" : 242,
+			"g" : 214,
+			"b" : 162
+		},
+		"desc" : "Es una criatura cariñosa y social. Le gusta estar cerca a su dueño y no le gusta quedarse sola.\n\nEfecto: Ninguno.\n\nObtenido desde el nivel 1.",
 		"idImage" : 2
 	},
 	
 	"Circulo" : {
+		"blocked" : false,
+		"color" : {
+			"r" : 183,
+			"g" : 141,
+			"b" : 242
+		},
+		"desc" : "Es un monstruo muy mimado y\nsólo le gusta ser acariciado por su dueño. A pesar de que se muestra agresivo, no lo es.\n\nEfecto: Ninguno.\n\nObtenido desde el nivel 1.",
 		"idImage" : 3
 	},
 	
 	"Comodin" : {
+		"blocked" : false,
 		"capacidad" : 5,
+		"desc" : "Es una especie muy astuta y pícara. Se vende por mayor precio que los otros.\n\nEfecto: Puede hacerse pasar por otros monstruos con su camuflaje.\n\nObtenido desde el nivel X.",
 		"funcParams" : [],
 		"idFunc" : 1,
 		"idImage" : 8,
 		"peso" : 50,
 		"puntaje" : 120
+	},
+	
+	"Apestoso" : {
+		"blocked" : false,
+		"capacidad" : 2,
+		"desc" : "Aunque esta especie es un poco desagradable, son criaturas muy cariñosas y carismáticas.\n\nEfecto: Cierra temporalmente un espacio de clientes.\n\nObtenido desde el nivel X.",
+		"funcParams" : [5],
+		"idFunc" : 2,
+		"idImage" : 9,
+		"peso" : 50,
+		"puntaje" : 0
 	}
 }

@@ -24,6 +24,12 @@
 	
 	"MonsterType" : {
 		"capacidad" : -1,
+		"color" : {
+			"r" : 200,
+			"g" : 200,
+			"b" : 200
+		},
+		"desc" : "",
 		"funcParams" : [],
 		"idFunc" : 0,
 		"idImage" : 0,
