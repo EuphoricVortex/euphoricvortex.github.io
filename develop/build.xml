@@ -198,7 +198,6 @@
                 <file name="src/play/Client.js"/>
                 <file name="src/play/ClientAIComponent.js"/>
                 <file name="src/play/FixedCounterClientAIComponent.js"/>
-                <file name="src/play/GUILayer.js"/>
                 <file name="src/play/Mnstricon.js"/>
                 <file name="src/play/Monster.js"/>
                 <file name="src/play/MonsterAIComponent.js"/>
@@ -207,13 +206,18 @@
                 <file name="src/play/PlayLayer.js"/>
                 <file name="src/play/PlayScene.js"/>
                 <file name="src/play/Screen.js"/>
+                <file name="src/play/SpinningCoin.js"/>
                 <file name="src/screens/AchievementPopup.js"/>
+                <file name="src/screens/AlertPopup.js"/>
                 <file name="src/screens/BackButton.js"/>
                 <file name="src/screens/CapacityBoosterButton.js"/>
                 <file name="src/screens/Catalogue.js"/>
                 <file name="src/screens/CataloguePage.js"/>
+                <file name="src/screens/GUILayer.js"/>
                 <file name="src/screens/ImproveButton.js"/>
                 <file name="src/screens/Main.js"/>
+                <file name="src/screens/NormalImproveButton.js"/>
+                <file name="src/screens/PauseMenu.js"/>
                 <file name="src/screens/PlayConfiguration.js"/>
                 <file name="main.js"/>
 
