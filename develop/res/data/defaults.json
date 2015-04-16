@@ -14,6 +14,7 @@
 		"interval" : 32,
 		"numCasillas" : 1,
 		"pedidoMaxSize" : 1,
+		"pedidoMinSize" : 1,
 		"tiempoEsperaCliente" : 0
 	},
 	

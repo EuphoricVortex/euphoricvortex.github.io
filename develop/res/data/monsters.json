@@ -8,7 +8,7 @@
 		},
 		"desc" : "Es una criatura muy alegre y juguetona. A pesar de su cornamenta, también es muy dócil y calmada.\n\nEfecto: Ninguno.\n\nObtenido desde el principio.",
 		"idImage" : 1,
-		"name" : "Verde"
+		"name" : "Weedy"
 	},
 	
 	"Triangulo" : {
@@ -18,9 +18,9 @@
 			"g" : 138,
 			"b" : 67
 		},
-		"desc" : "Es una criatura cariñosa y social. Le gusta estar cerca a su dueño y no le gusta quedarse sola.\n\nEfecto: Ninguno.\n\nObtenido desde el principio.",
+		"desc" : "Es una criatura cariñosa y social. Le gusta estar cerca a su dueño y no le gusta quedarse solo.\n\nEfecto: Ninguno.\n\nObtenido desde el principio.",
 		"idImage" : 2,
-		"name" : "Naranja"
+		"name" : "Bobby"
 	},
 	
 	"Circulo" : {
@@ -32,7 +32,7 @@
 		},
 		"desc" : "Es un monstruo muy mimado y\nsólo le gusta ser acariciado por su dueño. A pesar de que se muestra agresivo, no lo es.\n\nEfecto: Ninguno.\n\nObtenido desde el principio.",
 		"idImage" : 3,
-		"name" : "Rojo"
+		"name" : "Grumpy"
 	},
 	
 	"Comodin" : {
@@ -47,7 +47,7 @@
 		"funcParams" : [0],
 		"idFunc" : 1,
 		"idImage" : 8,
-		"name" : "Artista",
+		"name" : "Arty",
 		"peso" : 40,
 		"puntaje" : 120
 	},
@@ -64,7 +64,7 @@
 		"funcParams" : [2],
 		"idFunc" : 3,
 		"idImage" : 10,
-		"name" : "Girl",
+		"name" : "Molly",
 		"peso" : 60,
 		"puntaje" : 0
 	},

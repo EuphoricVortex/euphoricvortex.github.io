@@ -201,6 +201,7 @@
                 <file name="src/play/Mnstricon.js"/>
                 <file name="src/play/Monster.js"/>
                 <file name="src/play/MonsterAIComponent.js"/>
+                <file name="src/play/MonsterHalo.js"/>
                 <file name="src/play/MusicComponent.js"/>
                 <file name="src/play/PlayInputComponent.js"/>
                 <file name="src/play/PlayLayer.js"/>
@@ -208,12 +209,15 @@
                 <file name="src/play/Screen.js"/>
                 <file name="src/play/SpinningCoin.js"/>
                 <file name="src/screens/AchievementPopup.js"/>
+                <file name="src/screens/AchievementScreen.js"/>
                 <file name="src/screens/AlertPopup.js"/>
                 <file name="src/screens/BackButton.js"/>
                 <file name="src/screens/CapacityBoosterButton.js"/>
                 <file name="src/screens/Catalogue.js"/>
                 <file name="src/screens/CataloguePage.js"/>
+                <file name="src/screens/GameOverMenu.js"/>
                 <file name="src/screens/GUILayer.js"/>
+                <file name="src/screens/HighscorePopup.js"/>
                 <file name="src/screens/ImproveButton.js"/>
                 <file name="src/screens/Main.js"/>
                 <file name="src/screens/NormalImproveButton.js"/>
