@@ -40,7 +40,8 @@
 	},
 	
 	"MusicComponent" : {
-		"interval" : 15
+		"interval" : 15,
+		"intro" : 120
 	},
 	
 	"PlayLayer" : {
