@@ -6,7 +6,7 @@
 			"g" : 217,
 			"b" : 151
 		},
-		"desc" : "Es una criatura muy alegre y juguetona. A pesar de su cornamenta, también es muy dócil y calmada.\n\nEfecto: Ninguno.\n\nObtenido desde el principio.",
+		"desc" : "Es una criatura muy alegre y juguetona. A pesar de su cornamenta, también es muy dócil y calmada.\n\nEfecto: Ninguno.",
 		"idImage" : 1,
 		"name" : "Weedy"
 	},
@@ -18,7 +18,7 @@
 			"g" : 138,
 			"b" : 67
 		},
-		"desc" : "Es una criatura cariñosa y social. Le gusta estar cerca a su dueño y no le gusta quedarse solo.\n\nEfecto: Ninguno.\n\nObtenido desde el principio.",
+		"desc" : "Es una criatura cariñosa y social. Le gusta estar cerca a su dueño y no le gusta quedarse solo.\n\nEfecto: Ninguno.",
 		"idImage" : 2,
 		"name" : "Bobby"
 	},
@@ -30,7 +30,7 @@
 			"g" : 141,
 			"b" : 242
 		},
-		"desc" : "Es un monstruo muy mimado y\nsólo le gusta ser acariciado por su dueño. A pesar de que se muestra agresivo, no lo es.\n\nEfecto: Ninguno.\n\nObtenido desde el principio.",
+		"desc" : "Es un monstruo muy mimado y\nsólo le gusta ser acariciado por su dueño. A pesar de que se muestra agresivo, no lo es.\n\nEfecto: Ninguno.",
 		"idImage" : 3,
 		"name" : "Grumpy"
 	},
@@ -43,7 +43,7 @@
 			"g" : 184,
 			"b" : 156
 		},
-		"desc" : "Es una especie muy astuta y pícara. Se vende por mayor precio que los otros.\n\nEfecto: Puede hacerse pasar por otros monstruos con su camuflaje.\n\nObtenido desde el nivel %d.",
+		"desc" : "Es una especie muy astuta y pícara. Se vende por mayor precio que los otros.\n\nEfecto: Puede hacerse pasar por otros monstruos con su camuflaje.\n\nSalen %d por partida.",
 		"funcParams" : [0],
 		"idFunc" : 1,
 		"idImage" : 8,
@@ -60,7 +60,7 @@
 			"g" : 74,
 			"b" : 112
 		},
-		"desc" : "Estas chicas muy atractivas seducen a los demás monstruos.\n\nEfecto: Entrega varios monstruos automáticamente.\n\nObtenido desde el nivel %d.",
+		"desc" : "Estas chicas muy atractivas seducen a los demás monstruos.\n\nEfecto: Entrega varios monstruos automáticamente.\n\nSalen %d por partida.",
 		"funcParams" : [2],
 		"idFunc" : 3,
 		"idImage" : 10,
@@ -77,7 +77,7 @@
 			"g" : 192,
 			"b" : 62
 		},
-		"desc" : "Aunque esta especie es un poco desagradable, son criaturas muy cariñosas y carismáticas.\n\nEfecto: Cierra temporalmente un espacio de clientes.\n\nObtenido desde el nivel %d.",
+		"desc" : "Aunque esta especie es un poco desagradable, son criaturas muy cariñosas y carismáticas.\n\nEfecto: Cierra temporalmente un espacio de clientes.\n\nSalen %d por partida.",
 		"funcParams" : [5],
 		"idFunc" : 2,
 		"idImage" : 9,
@@ -94,7 +94,7 @@
 			"g" : 147,
 			"b" : 208
 		},
-		"desc" : "Son criaturas tímidas y muy esquivas. Cuando entran en pánico, expulsan grandes cantidades de hielo.\n\nEfecto: Congela a los clientes.\n\nObtenido desde el nivel %d.",
+		"desc" : "Son criaturas tímidas y muy esquivas. Cuando entran en pánico, expulsan grandes cantidades de hielo.\n\nEfecto: Congela a los clientes.\n\nSalen %d por partida.",
 		"funcParams" : [6],
 		"idFunc" : 4,
 		"idImage" : 11,
