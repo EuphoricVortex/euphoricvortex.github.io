@@ -216,6 +216,7 @@
                 <file name="src/screens/CapacityBoosterButton.js"/>
                 <file name="src/screens/Catalogue.js"/>
                 <file name="src/screens/CataloguePage.js"/>
+                <file name="src/screens/EuphoricLoader.js"/>
                 <file name="src/screens/GameOverMenu.js"/>
                 <file name="src/screens/GameTutorial.js"/>
                 <file name="src/screens/GUILayer.js"/>
