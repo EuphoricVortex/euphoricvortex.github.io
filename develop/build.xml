@@ -214,9 +214,10 @@
                 <file name="src/screens/AlertPopup.js"/>
                 <file name="src/screens/BackButton.js"/>
                 <file name="src/screens/CapacityBoosterButton.js"/>
-                <file name="src/screens/Catalogue.js"/>
-                <file name="src/screens/CataloguePage.js"/>
                 <file name="src/screens/EuphoricLoader.js"/>
+                <file name="src/screens/Gallery.js"/>
+                <file name="src/screens/GalleryPage.js"/>
+                <file name="src/screens/GalleryTutorial.js"/>
                 <file name="src/screens/GameOverMenu.js"/>
                 <file name="src/screens/GameTutorial.js"/>
                 <file name="src/screens/GUILayer.js"/>

@@ -43,7 +43,7 @@
 			"g" : 184,
 			"b" : 156
 		},
-		"desc" : "Es una especie muy astuta y pícara. Se vende por mayor precio que los otros.\n\nEfecto: Puede hacerse pasar por otros monstruos con su camuflaje.\n\nSalen %d por partida.",
+		"desc" : "Es una especie muy astuta y pícara. Su precio normal es 120 monedas.\n\nEfecto: Puede hacerse pasar por otros monstruos con su camuflaje.\n\nSalen %d por partida.",
 		"funcParams" : [0],
 		"idFunc" : 1,
 		"idImage" : 8,
