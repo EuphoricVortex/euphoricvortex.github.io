@@ -1,0 +1,56 @@
+{
+	"BackgroundLayer" : {
+		"color" : {
+			"r" : 242,
+			"g" : 214,
+			"b" : 162
+		},
+		"counterHeight" : 60,
+		"upperSpaceHeight" : 170
+	},
+	
+	"ClientAIComponent" : {
+		"clienteYPos" : 132,
+		"interval" : 32,
+		"numCasillas" : 1,
+		"pedidoMaxSize" : 1,
+		"pedidoMinSize" : 1,
+		"tiempoEsperaCliente" : 0
+	},
+	
+	"MonsterAIComponent" : {
+		"anchoMonstruos" : 80,
+		"interval" : 8
+	},
+	
+	"MonsterType" : {
+		"capacidad" : -1,
+		"color" : {
+			"r" : 200,
+			"g" : 200,
+			"b" : 200
+		},
+		"desc" : "",
+		"funcParams" : [],
+		"idFunc" : 0,
+		"idImage" : 0,
+		"name" : "",
+		"peso" : 1,
+		"puntaje" : 100
+	},
+	
+	"MusicComponent" : {
+		"interval" : 15,
+		"intro" : 120
+	},
+	
+	"PlayLayer" : {
+		"clientSpaceHeight" : 250,
+		"counterSize" : 8,
+		"difficultyInterval" : 5,
+		"minAncho" : 60,
+		"pedidosSize" : 8,
+		"tiposDisponibles" : 1,
+		"vidas" : 3
+	}
+}
