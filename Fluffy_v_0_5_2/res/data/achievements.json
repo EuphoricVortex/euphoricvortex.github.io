@@ -1,0 +1,189 @@
+{
+	"level0" : {
+		"achievement1" : {
+			"title" : {
+				"en" : "First sale",
+				"es" : "Primera venta"
+			},
+			"id" : 0,
+			"requirement" : [100],
+			"prize" : [0, 0]
+		},
+		"prize" : [2, 8]
+	},
+	"level1" : {
+		"achievement1" : {
+			"title" : {
+				"en" : "Novice",
+				"es" : "Novato"
+			},
+			"id" : 1,
+			"requirement" : [2],
+			"prize" : [0, 0]
+		},
+		"prize" : [1, 8, 3]
+	},
+	"level2" : {
+		"achievement1" : {
+			"title" : {
+				"en" : "Better sales",
+				"es" : "Más ventas"
+			},
+			"id" : 0,
+			"requirement" : [5000],
+			"prize" : [0, 500]
+		},
+		"achievement2" : {
+			"title" : {
+				"en" : "Determined",
+				"es" : "Firme"
+			},
+			"id" : 1,
+			"requirement" : [4],
+			"prize" : [0, 500]
+		},
+		"prize" : [2, 10]
+	},
+	"level3" : {
+		"achievement1" : {
+			"title" : {
+				"en" : "Weekly",
+				"es" : "Semanalmente"
+			},
+			"id" : 1,
+			"requirement" : [7],
+			"prize" : [0, 700]
+		},
+		"achievement2" : {
+			"title" : {
+				"en" : "Fast sales",
+				"es" : "Ventas ágiles"
+			},
+			"id" : 2,
+			"requirement" : [10000, 7],
+			"prize" : [0, 700]
+		},
+		"prize" : [1, 10, 3]
+	},
+	"level4" : {
+		"achievement1" : {
+			"title" : {
+				"en" : "Insatiable",
+				"es" : "Insaciable"
+			},
+			"id" : 0,
+			"requirement" : [14000],
+			"prize" : [0, 2000]
+		},
+		"achievement2" : {
+			"title" : {
+				"en" : "Preferential treatment",
+				"es" : "Trato preferencial"
+			},
+			"id" : 4,
+			"requirement" : [6],
+			"prize" : [0, 2000]
+		},
+		"achievement3" : {
+			"title" : {
+				"en" : "Persistent",
+				"es" : "Perseverante"
+			},
+			"id" : 1,
+			"requirement" : [9],
+			"prize" : [0, 2000]
+		},
+		"prize" : [2, 9]
+	},
+	"level5" : {
+		"achievement1" : {
+			"title" : {
+				"en" : "No tricks",
+				"es" : "Sin trucos"
+			},
+			"id" : 3,
+			"requirement" : [10, 8],
+			"prize" : [1, 8, 5]
+		},
+		"achievement2" : {
+			"title" : {
+				"en" : "Tenacious",
+				"es" : "Constante"
+			},
+			"id" : 1,
+			"requirement" : [13],
+			"prize" : [0, 3000]
+		},
+		"achievement3" : {
+			"title" : {
+				"en" : "Hasty",
+				"es" : "Apresurado"
+			},
+			"id" : 2,
+			"requirement" : [23000, 11],
+			"prize" : [0, 3000]
+		},
+		"prize" : [0, 50000]
+	},
+	"level6" : {
+		"achievement1" : {
+			"title" : {
+				"en" : "Customer service",
+				"es" : "Atención al cliente"
+			},
+			"id" : 5,
+			"requirement" : [100],
+			"prize" : [0, 5000]
+		},
+		"achievement2" : {
+			"title" : {
+				"en" : "Two weeks",
+				"es" : "Quincena"
+			},
+			"id" : 1,
+			"requirement" : [15],
+			"prize" : [0, 10000]
+		},
+		"achievement3" : {
+			"title" : {
+				"en" : "Garage sale",
+				"es" : "Ventas de garaje"
+			},
+			"id" : 2,
+			"requirement" : [20000, 10],
+			"prize" : [0, 5000]
+		},
+		"prize" : [2, 11]
+	},
+	"level7" : {
+		"achievement1" : {
+			"title" : {
+				"en" : "I hate pink",
+				"es" : "Odio el rosa"
+			},
+			"id" : 3,
+			"requirement" : [15, 10],
+			"prize" : [1, 10, 5]
+		},
+		"achievement2" : {
+			"title" : {
+				"en" : "Bargain",
+				"es" : "Ganga"
+			},
+			"id" : 2,
+			"requirement" : [35000, 15],
+			"prize" : [0, 10000]
+		},
+		"achievement3" : {
+			"title" : {
+				"en" : "Excited",
+				"es" : "Ansioso"
+			},
+			"id" : 0,
+			"requirement" : [40000],
+			"prize" : [0, 10000]
+		},
+		"prize" : [0, 100000]
+	},
+	"level8" : "done"
+}
