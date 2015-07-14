@@ -1,0 +1,23 @@
+---
+---
+@charset "utf-8";
+
+// Global variables.
+@import 'vars';
+
+// Processed variables.
+$imgpath: "{{ site.baseurl }}/images";
+
+// IE8- HTML5 fix.
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+  display:block;
+}
+
+// Import partials in order.
+@import
+  "base",
+  "fonts",
+  "layout",
+  "icons-no-svg",
+  "syntax-highlighting";

@@ -1,0 +1,111 @@
+/**
+ * Mixins needed
+ */
+@mixin scope() {
+  @content;
+}
+
+@mixin media-less-than($width) {
+  @media only screen and (max-width: #{$width}) {
+    @content;
+  }
+}
+
+@mixin media-more-than($width) {
+  @media only screen and (min-width: #{$width}) {
+    @content;
+  }
+}
+
+@mixin media-between($min-width, $max-width) {
+  @if $min-width < $max-width {
+    @media only screen and (min-width: #{$min-width}) and (max-width: #{$max-width}) {
+      @content;
+    }
+  }
+  @else if $min-width > $max-width {
+    @media only screen and (min-width: #{$max-width}) and (max-width: #{$min-width}) {
+      @content;
+    }
+  }
+}
+
+@mixin media-outside($min-width, $max-width) {
+  @if $min-width < $max-width {
+    @media only screen and (max-width: #{$min-width}), screen and (min-width: #{$max-width}) {
+      @content;
+    }
+  }
+  @else if $min-width > $max-width {
+    @media only screen and (max-width: #{$max-width}), screen and (min-width: #{$min-width}) {
+      @content;
+    }
+  }
+}
+
+@mixin media-size-more-than ($width, $height) {
+  @media only screen and (min-width: #{$width}) and (min-height: #{$height}) {
+    @content;
+  }
+}
+
+@mixin transition($speed, $properties...) {
+  @if length($properties) > 0 {
+    $full-transition: ();
+    
+    @each $prop in $properties {
+      $full-prop: join($prop $speed, $base-transition, space);
+      $full-transition: append($full-transition, $full-prop, comma);
+    }
+    
+    @include media-more-than($tiny-size) {
+      transition: $full-transition;
+      -webkit-transition: $full-transition;
+    }
+  }
+}
+
+/**
+ * Extensions needed.
+ */
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+%border-radius {
+  border-radius: $border-radius;
+}
+
+%vertical-rhythm {
+  margin-bottom: $spacing-unit;
+}
+
+%header-ul-menu-items {
+  @extend %clearfix;
+  
+  li {
+    display: block;
+    float: left;
+  }
+  
+  a {
+    display: table;
+    width: 100%;
+    height: 100%;
+    
+    &:hover, &:active {
+      color: white;
+      text-decoration: none;
+    }
+  }
+  
+  p {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+  }
+}

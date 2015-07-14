@@ -1,0 +1,46 @@
+// Font vars.
+$header-font-name: hvd_comic_serif_pro;
+$text-font-name: source_sans_pro;
+$base-font-family: $text-font-name, "Trebuchet MS", Helvetica, sans-serif;
+$title-font-family: $header-font-name, Rockwell, Georgia, serif;
+$base-font-size: 1em;
+$small-font-size: 88%;
+$base-line-height: 1.25;
+
+// Metric vars.
+$spacing-unit: 25px;
+$icon-size: 26px;
+$nav-icon-size: 10px;
+$tiny-size: 380px;
+$small-size: 550px;
+$medium-size: 800px;
+$big-size: 1100px;
+$border-thin: 1px;  // These values have to be added because using standard thin/medium/thick affects object width in IE.
+$border-medium: 3px;
+$border-thick: 5px;
+$border-radius: 4px;
+
+// Color vars.
+$text-color: #311;
+$brand-color: #d44219;
+$color1: #F38050;
+$color2: #E2E2B3;
+$color3: #9CDBAA;
+$color4: #6BE7B2;
+$platform-colors: (
+  facebook: #3C5998,
+  twitter: #55ACEE,
+  youtube: #D22222,
+  googlep: #DD4B39,
+  patreon: #FE5900,
+  tumblr: #35465C,
+  reddit: #369    // Other choices: #CEE3F8 #FF4500
+);
+$color-grey: #828282;
+$color-grey-light: lighten($color-grey, 20%);
+$color-grey-dark: darken($color-grey, 15%);
+
+// Transition vars.
+$base-transition: ease-in-out 0s;
+$transition-speed-normal: 0.8s;
+$transition-speed-fast: 0.4s;

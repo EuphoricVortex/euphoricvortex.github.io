@@ -1,0 +1,17 @@
+.social-icons {
+  svg {
+    display: inline-block;
+    width: $icon-size;
+    height: $icon-size;
+    fill: $brand-color;
+    vertical-align: middle;
+  }
+  
+  a:hover {
+    @each $platform, $color in $platform-colors {
+      .icon-#{$platform} {
+        fill: $color;
+      }
+    }
+  }
+}

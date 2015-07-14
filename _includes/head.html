@@ -1,0 +1,82 @@
+<head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
+{% capture canon_url %}{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}{% endcapture %}
+{% capture ready_description %}{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines }}{% elsif page.description %}{{ page.description | strip_newlines }}{% else %}{{ site.description | strip_newlines }}{% endif %}{% endcapture %}
+{% if page.image %}{% capture image %}{{ site.url | append: site.baseurl | append: '/images' }}{{ page.image | replace: '.', '_big.' }}{% endcapture %}
+{% elsif page.images and page.images.size > 0 %}{% capture image %}{{ site.url | append: site.baseurl | append: '/images' }}{{ page.images.first | replace: '.', '_medium.' }}{% endcapture %}
+{% elsif page.thumbnail %}{% assign thumb = true %}{% capture image %}{{ site.url | append: site.baseurl | append: '/images' | append: page.thumbnail }}{% endcapture %}
+{% else %}{% assign image = null %}{% endif %}
+	
+	<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+	
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width initial-scale=1" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="description" content="{{ ready_description }}" />
+	<meta name="keywords" content="{% if page.tags and page.tags.size > 0 %}{{ page.tags | join:' ' }}{% else %}pleasing touching fun videogames social family friend moments brain challenge{% endif %}" />
+	<meta name="author" content="Juan Carlos Niño" />
+	{% if page.hidden %}<meta name="robots" content="noindex" />{% endif %}
+	
+	<meta property="og:url" content="{{ canon_url }}" />
+	<meta property="og:type" content="{% if page.excerpt %}article{% else %}website{% endif %}" />
+	<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+	<meta property="og:description" content="{{ ready_description }}" />
+	<meta property="og:site_name" content="{{ site.title }}" />
+	{% if image %}<meta property="og:image" content="{{ image }}" />{% endif %}
+	{% if page.excerpt %}<meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}" />
+	<meta property="article:publisher" content="{{ 'https://www.facebook.com/' | append: site.facebook_username }}" />
+	{% if page.tags and page.tags.size > 0 %}<meta property="article:tag" content="{{ page.tags | join: ',' }}" />{% endif %}{% endif %}
+	
+	{% if image %}<meta name="twitter:card" content="{% if thumb %}summary{% else %}summary_large_image{% endif %}" />
+	<meta name="twitter:image" content="{{ image }}" />{% else %}<meta name="twitter:card" content="summary" />{% endif %}
+	<meta name="twitter:url" content="{{ canon_url }}" />
+	<meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+	<meta name="twitter:description" content="{{ ready_description }}" />
+	<meta name="twitter:site" content="@{{ site.twitter_username }}" />
+	
+	<!--[if lte IE 8]>
+	<link rel="stylesheet" href="{{ '/css/mainIE8.css' | prepend: site.baseurl }}" />
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<script>
+		document.createElement('svg');
+		if (!Function.prototype.bind) {		// I don't need "new" validation, so I'll just stick my own simple hard bind here.
+			Function.prototype.bind = function bind(o) {
+				var a,f;if (typeof this !== "function") throw new TypeError("Function.prototype.bind: Function isn't callable!");
+				f=this;a=Array.prototype.slice.call(arguments, 1);
+				return function(){ return f.apply(o, a.concat(Array.prototype.slice.call(arguments))); }
+			}
+		}
+	</script>
+	<![endif]-->
+	<!--[if gt IE 8]>
+	<link rel="stylesheet" href="{{ '/css/main.css ' | prepend: site.baseurl }}" />
+	<![endif]-->
+	<!--[if !IE]><!-->
+	<link rel="stylesheet" href="{{ '/css/main.css' | prepend: site.baseurl }}" />
+	<!--<![endif]-->{% if layout.styles and layout.styles.size > 0 %}{% for style in layout.styles %}
+	<link rel="stylesheet" href="{{ site.baseurl | append: '/css/' | append: style }}" />{% endfor %}{% elsif page.styles and page.styles.size > 0 %}{% for style in page.styles %}
+	<link rel="stylesheet" href="{{ site.baseurl | append: '/css/' | append: style }}" />{% endfor %}{% endif %}
+	
+	<link rel="publisher" href="{{ 'https://plus.google.com/+' | append: site.youtube_username }}" />
+	<link rel="canonical" href="{{ canon_url }}" />
+	
+	<link rel="apple-touch-icon-precomposed" href="{{ site.baseurl | append: '/images/apple-touch-icon-precomposed.png' }}" />
+	<link rel="apple-touch-icon" sizes="57x57" href="{{ site.baseurl | append: '/images/apple-touch-icon-57x57.png' }}" />
+	<link rel="apple-touch-icon" sizes="60x60" href="{{ site.baseurl | append: '/images/apple-touch-icon-60x60.png' }}" />
+	<link rel="apple-touch-icon" sizes="72x72" href="{{ site.baseurl | append: '/images/apple-touch-icon-72x72.png' }}" />
+	<link rel="apple-touch-icon" sizes="76x76" href="{{ site.baseurl | append: '/images/apple-touch-icon-76x76.png' }}" />
+	<link rel="apple-touch-icon" sizes="114x114" href="{{ site.baseurl | append: '/images/apple-touch-icon-114x114.png' }}" />
+	<link rel="apple-touch-icon" sizes="120x120" href="{{ site.baseurl | append: '/images/apple-touch-icon-120x120.png' }}" />
+	<link rel="apple-touch-icon" sizes="144x144" href="{{ site.baseurl | append: '/images/apple-touch-icon-144x144.png' }}" />
+	<link rel="apple-touch-icon" sizes="152x152" href="{{ site.baseurl | append: '/images/apple-touch-icon-152x152.png' }}" />
+	<link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl | append: '/images/apple-touch-icon-180x180.png' }}" />
+	<link rel="icon" type="image/png" href="{{ site.baseurl | append: '/images/favicon-32x32.png' }}" sizes="32x32" />
+	<link rel="icon" type="image/png" href="{{ site.baseurl | append: '/images/android-chrome-192x192.png' }}" sizes="192x192" />
+	<link rel="icon" type="image/png" href="{{ site.baseurl | append: '/images/favicon-96x96.png' }}" sizes="96x96" />
+	<link rel="icon" type="image/png" href="{{ site.baseurl | append: '/images/favicon-16x16.png' }}" sizes="16x16" />
+	<link rel="manifest" href="{{ site.baseurl | append: '/images/manifest.json' }}" />
+	<link rel="shortcut icon" type="image/x-icon" href="{{ site.baseurl | append: '/images/favicon.ico' }}" />
+	<meta name="msapplication-TileColor" content="#d44219" />
+	<meta name="msapplication-TileImage" content="{{ site.baseurl | append: '/images/mstile-144x144.png' }}" />
+	<meta name="msapplication-config" content="{{ site.baseurl | append: '/images/browserconfig.xml' }}" />
+	<meta name="theme-color" content="#f38050" />
+</head>

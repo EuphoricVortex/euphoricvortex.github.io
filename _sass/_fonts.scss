@@ -1,0 +1,31 @@
+@mixin font-face ($family-name, $filename, $weight: normal, $style: normal) {
+  @font-face {
+    font-family: $family-name;
+    src: url($filename + '.eot');
+    src: url($filename + '.eot?#iefix') format('embedded-opentype'),
+         url($filename + '.woff') format('woff'),
+         url($filename + '.ttf') format('truetype'),
+         url($filename + '.svg#' + $family-name) format('svg');
+    @if $weight != normal {
+      font-weight: $weight;
+    }
+    @if $style != normal {
+      font-style: $style;
+    }
+  }
+}
+
+@include font-face($header-font-name, 'HVD_Comic_Serif_Pro-webfont');
+
+@each $name, $weight, $style in ('regular', normal, normal),
+  ('it', normal, italic),
+  ('semibold', bold, normal),
+  ('semiboldit', bold, italic),
+  ('light', 100, normal),
+  ('lightit', 100, italic),
+  ('black', 900, normal),
+  ('blackit', 900, italic) {
+    @include font-face($text-font-name, 'sourcesanspro-' + $name + '-web', $weight, $style);
+}
+
+
