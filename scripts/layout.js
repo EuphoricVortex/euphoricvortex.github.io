@@ -415,7 +415,7 @@ var home = {
 			if (anchor.length) {
 				evt.preventDefault();
 				evt.stopImmediatePropagation();
-				$("html").stop().animate({
+				$("html, body").stop().animate({
 					scrollTop : $(anchor).offset().top - ($window.width() >= smallSize ? home.mainMenuItemHeight : 0)
 				}, 600);
 			}
