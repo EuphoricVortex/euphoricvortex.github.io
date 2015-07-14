@@ -1,0 +1,71 @@
+---
+layout: default
+styles:
+  - games.css
+---
+{% if site.games.size > 0 %}<nav class="games">
+	<div class="games-overflow">{% for game in site.games %}
+		<a class="games-game" href="{{ site.baseurl | append: game.url }}">
+			<img alt="{{ game.title }} thumbnail" src="{{ site.baseurl | append: '/images' | append: game.thumbnail }}" />
+			<p>{{ game.title }}</p>
+		</a>
+	{% endfor %}</div>
+	<a class="games-button-left" href="#">&lt;</a>
+	<a class="games-button-right" href="#">&gt;</a>
+</nav>{% endif %}
+
+<header class="game-title">
+	<h1>{{ page.title }}</h1>
+	<a class="game-button-play" href="#">Play</a>
+</header>
+
+<section class="game-about">
+	<h2>About the game</h2>
+	{% assign b1 = page.videos and page.videos.size > 0 %}{% assign b2 = page.images and page.images.size > 0 %}
+	{% if b1 or b2 %}<div class="game-about-images">
+		<div class="game-about-images-container with-transition">{% for video in page.videos %}
+			<iframe src="//www.youtube-nocookie.com/embed/{{ video }}?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen >
+			</iframe>{% endfor %}{% for img in page.images %}
+			<img alt="Image {{ forloop.index }} of {{ page.title }}" src="{{ site.baseurl | append: '/images' | append: img }}" />{% endfor %}
+		</div>
+		<div class="game-about-images-sliderleft"><div></div></div>
+		<div class="game-about-images-sliderright"><div></div></div>
+		<div class="game-about-images-sliderbg">
+			<div class="game-about-images-slider"></div>
+		</div>
+	</div>{% endif %}
+	<div class="game-about-content">
+		<p>{{ page.description }}</p>
+		{{ content }}
+	</div>
+</section>
+
+{% if page.hints and page.hints.size > 0 %}<section class="game-hints">
+	<h2>Hints and strategies</h2>
+	<ul>{% for hint in page.hints %}
+		<li>{{ hint }}</li>
+	{% endfor %}</ul>
+</section>{% endif %}
+
+{% if page.cheats and page.cheats.size > 0 %}<section class="game-cheats">
+	<h2>Cheats</h2>
+	<ul>{% for cheat in page.cheats %}
+		<li>{{ cheat }}</li>
+	{% endfor %}</ul>
+</section>{% endif %}
+
+{% if page.devlog and page.devlog.size > 0 %}<section class="game-devlog">
+	<h2>Development log</h2>
+	{% for logpost in page.devlog %}
+	<h3>{{ logpost.date | date: "%b %-d, %Y" }}</h3>
+	<ul>{% for event in logpost.events %}
+		<li>{{ event }}</li>
+	{% endfor %}</ul>
+	{% endfor %}
+</section>{% endif %}
+<script>
+	var webLink, androidLink, iosLink;{% if page.web_link %}
+	webLink = "{{ page.web_link }}";{% endif %}{% if page.android_link %}
+	androidLink = "{{ page.android_link }}";{% endif %}{% if page.ios_link %}
+	iosLink = "{{ page.ios_link }}";{% endif %}
+</script>

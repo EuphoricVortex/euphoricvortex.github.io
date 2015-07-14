@@ -1,0 +1,72 @@
+---
+layout: default
+styles:
+  - blog.css
+---
+<article class="post">
+	<header class="post-header">
+		<img class="post-main-image" alt="Post main image" src="{{ site.baseurl | append: '/images' | append: page.image }}" />
+		{% capture social_icons %}
+		<ul class="social-icons">
+			<li><a title="Share on Facebook" rel="external" target="_blank"  href="https://www.facebook.com/sharer/sharer.php?
+				u={{ site.url | append: site.baseurl | append: page.url | cgi_escape }}">
+				{% include icons.html icon='facebook' %}
+			</a></li>
+			<li><a title="Share on twitter" rel="external" target="_blank" href="https://twitter.com/intent/tweet?
+				url={{ site.url | append: site.baseurl | append: page.url | cgi_escape }}&
+				via={{ site.twitter_username }}&
+				text={{ page.title | append: ':' | cgi_escape }}">
+				{% include icons.html icon='twitter' %}
+			</a></li>
+			<li><a title="Share on Google+" rel="external" target="_blank" href="https://plus.google.com/share?
+				url={{ site.url | append: site.baseurl | append: page.url | cgi_escape }}">
+				{% include icons.html icon='googlep' %}
+			</a></li>
+			<li><a title="Share on Tumblr" rel="external" target="_blank" href="http://www.tumblr.com/share/link?
+				url={{ site.url | append: site.baseurl | append: page.url | cgi_escape }}">
+				{% include icons.html icon='tumblr' %}
+			</a></li>
+			<li><a title="Share on Reddit" rel="external" target="_blank" href="http:/://www.reddit.com/submit?
+				url={{ site.url | append: site.baseurl | append: page.url | cgi_escape }}">
+				{% include icons.html icon='reddit' %}
+			</a></li>
+		</ul>
+		{% endcapture %}
+		{{ social_icons }}
+		<div class="post-meta">
+			<p class="post-meta-date">{{ page.date | date: "%b %-d, %Y" }} -</p>
+			{% if page.tags and page.tags.size > 0 %}<p class="post-meta-tags">{{ page.tags | array_to_sentence_string }}</p>{% endif %}
+		</div>
+		<h1>{{ page.title }}</h1>
+	</header>
+	<section class="post-content">
+		{{ content }}
+	</section>
+	<footer class="post-footer">
+		<div class="post-footer-share">
+			<p>Share:</p>
+			{{ social_icons }}
+		</div>
+		{% if page.author %}{% for member in site.data.team %}{% if member.name == page.author %}
+		<hr />
+		<p class="post-footer-authorword">Author:</p>
+		<img class="post-footer-image" alt="{{ member.name }} image" src="{{ site.baseurl | append: '/images' | append: member.img }}" />
+		<div class="post-footer-author">
+			<p class="post-footer-author-name">{{ member.name }}</p>
+			<p class="post-footer-author-role">{{ member.role }}.</p>
+		</div>
+		{% break %}{% endif %}{% endfor %}{% endif %}
+	</footer>
+</article>
+
+<aside class="posts">
+	<h2>Latest posts</h2>
+	<a class="posts-button-up" href="#">^</a>
+	<div class="posts-overflow"><div class="posts-container">
+		{% for post in site.posts %}<a class="posts-post" href="{{ site.baseurl | append: post.url }}">
+			<img alt="Post thumbnail" src="{{ site.baseurl | append: '/images' | append: post.thumbnail }}" />
+			<p>{{ post.title }}</p>
+		</a>{% endfor %}
+	</div></div>
+	<a class="posts-button-down" href="#">v</a>
+</aside>

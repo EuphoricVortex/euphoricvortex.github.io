@@ -1,0 +1,8 @@
+---
+---
+user-agent: *{% for page in site.pages %}{% if page.hidden %}
+disallow: {{ page.url | prepend: site.baseurl }}{% endif %}{% endfor %}{% for page in site.posts %}{% if page.hidden %}
+disallow: {{ page.url | prepend: site.baseurl }}{% endif %}{% endfor %}{% for page in site.games %}{% if page.hidden %}
+disallow: {{ page.url | prepend: site.baseurl }}{% endif %}{% endfor %}{% for page in site.podcasts %}{% if page.hidden %}
+disallow: {{ page.url | prepend: site.baseurl }}{% endif %}{% endfor %}
+allow: /

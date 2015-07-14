@@ -1,0 +1,30 @@
+---
+layout: default
+styles:
+  - blog.css
+---
+<article class="post">
+	<header class="post-header">
+		<div class="post-meta">
+			<p class="post-meta-date">{{ page.date | date: "%b %-d, %Y" }} -</p>
+			{% if page.tags and page.tags.size > 0 %}<p class="post-meta-tags">{{ page.tags | array_to_sentence_string }}</p>{% endif %}
+		</div>
+		<h1>{{ page.title }}</h1>
+	</header>
+	<section class="podcast">
+		<p>{{ page.description }}</p>
+		{{ content }}
+	</section>
+</article>
+
+<aside class="posts">
+	<h2>Podcasts</h2>
+	<a class="posts-button-up" href="#">^</a>
+	<div class="posts-overflow"><div class="posts-container">
+		{% for podcast in site.podcasts reversed %}<a class="posts-post" href="{{ site.baseurl | append: podcast.url }}">
+			<img alt="Podcast thumbnail" src="{{ site.baseurl | append: '/images' | append: podcast.thumbnail }}" />
+			<p>{{ podcast.title }}</p>
+		</a>{% endfor %}
+	</div></div>
+	<a class="posts-button-down" href="#">v</a>
+</aside>

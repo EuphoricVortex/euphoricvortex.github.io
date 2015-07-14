@@ -1,35 +1,92 @@
+---
+layout: null
+styles:
+  - home.css
+image: /main_image.png
+---
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="UTF-8" />
-	<title>Euphoric Vortex</title>
-	<style type="text/css">
-		body {
-			margin: 0;
-			padding: 0;
-		}
-		a {
-			color: #D44219;
-		}
-	</style>
-</head>
+{% include head.html %}
 <body>
-<div style="margin-left: auto; margin-right: auto; width: 70%;">
-	<div style="margin-left: auto; margin-right: auto; width: 716px;"><img src="images/logo.png" /></div>
-	<h1 style="text-align:center;display:none">Euphoric Vortex</h1>
-	<p style="text-align:center">Wait for something pleasing to be here soon...</p>
-	<p style="text-align:center"><a onclick='javascript:bitlink("1olL6hw")' href="javascript:void(0)">Play first level of "Bongy Gob"! (instructions in spanish)</a>
-		<br /><a onclick='javascript:bitlink("1Ek1KHe")' href="javascript:void(0)">Play version 0.0.1 of "Freedy the Healer"! (instructions in spanish)</a>
-		<br /><a onclick="javascript:playGame()" href="javascript:void(0)">Play version 0.5.2 of "Fluffy Madness"!</a>
-	</p>
-</div>
-<script>
-	function bitlink(bitly) {
-		window.location = "//bit.ly/"+bitly;
-	}
-	function playGame() {
-		window.location.assign("//fluffymadness.parseapp.com/demo");
-	}
-</script>
+
+<header class="home-header">
+	
+	<h1 class="site-title">{{ site.title }}</h1>
+	
+	<p class="site-motto">{{ site.motto }}</p>
+	
+	<nav class="site-menu">
+		<ul class="menu-items">
+			<li><a href="{{ site.baseurl }}/games"><p>games</p></a></li>
+			<li><a href="{{ site.baseurl }}/blog"><p>blog</p></a></li>
+			<li><a href="{{ site.baseurl }}/podcasts"><p>podcast archive</p></a></li>
+		</ul>
+	</nav>
+	
+	<nav class="home-submenu">
+		<ul class="menu-items">
+			<li><a href="#about"><p>About us</p></a></li>
+			<li><a href="#purpose"><p>Our purpose</p></a></li>
+			<li><a href="#team"><p>The team</p></a></li>
+		</ul>
+	</nav>
+
+</header>
+
+<section class="home-content">
+	<!--div class="big-button-patreon">
+		<p>We'll really thank you if you support us on Patreon!</p>
+	</div-->
+	
+	<section name="about" id="about">
+		<h2>About us</h2>
+		<p>{{ site.description }}</p>
+		<iframe class="about-video"
+		src="https://www.youtube-nocookie.com/embed/0F5CsMXTY1M?rel=0&amp;showinfo=0"
+		frameborder="0"
+		allowfullscreen >
+		</iframe>
+	</section>
+	
+	<section name="purpose" id="purpose">
+		<h2>Our purpose</h2>
+		<div class="purpose-description-container">
+			<div class="purpose-description">
+				<p>We’re a friendly entrepreneur group with a business project aimed at casual players.
+					We want to present you memorable experiences, either through touching stories or
+					pleasing social moments.</p>
+				<p>We consider that video games are the perfect media to promote
+					social and family integration, specially with cooperative games. Likewise, we plan on
+					captivating you with an enjoyable perceptual experience and challenges that allow
+					development of brain and dexterity skills.</p>
+				<p>You are our priority, as we all have been on the other side and we want to treat
+					you just like we would like to be treated.</p>
+			</div>
+		</div>
+	</section>
+	
+	<section name="team" id="team">
+		<h2>The team</h2>
+		<div class="team-container">{% for member in site.data.team %}
+		<div class="team-member">
+			<img alt="{{ member.name }} image" src="{{ site.baseurl | append: '/images' | append: member.img }}" />
+			<p class="team-member-name">{{ member.name }}</p>
+			<p class="team-member-role">{{ member.role }}</p>
+			<p class="team-member-description">{{ member.description | strip_newlines }}</p>
+			<p class="team-member-email">{{ member.email }}</p>
+		</div>
+		{% endfor %}</div>
+	</section>
+	
+	<div class="big-button-play">
+		<p>Check out our latest game!</p>
+	</div>
+	
+	<div class="big-button-patreon">
+		<p>Support us on Patreon, we'll thank you so much!</p>
+	</div>
+</section>
+
+{% include footer.html %}
 </body>
 </html>

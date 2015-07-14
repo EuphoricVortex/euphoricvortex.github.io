@@ -1,0 +1,298 @@
+/**
+ *   Blog post layout.
+ */
+@include scope() {
+  $max-thumbnail-width: 200px;
+  $max-image-width: 1500px;
+  $nav-height: 50px;
+  $social-icons: 5;
+  $social-icons-spacing: 10px;
+  
+  article.post {
+    float: right;
+    overflow: hidden;
+    width: 75%;
+    max-width: $max-image-width;
+    margin-left: 2%;
+    background-color: white;
+    @extend %border-radius;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  
+  header.post-header {
+    @extend %clearfix;
+    
+    h1 {
+      clear: both;
+      margin-top: $spacing-unit * 1.2;
+      padding: $spacing-unit / 3;
+      background-color: $brand-color;
+      color: white;
+      text-align: center;
+      @extend %vertical-rhythm;
+    }
+    
+    ul.social-icons {
+      float: right;
+      padding: 0 $spacing-unit * 0.7;
+      @extend %clearfix;
+      
+      li {
+        float: left;
+        margin-left: $social-icons-spacing;
+      }
+    }
+  }
+  
+  img.post-main-image {
+    margin-bottom: $spacing-unit * 1.5;
+  }
+  
+  div.post-meta {
+    overflow: hidden;
+    padding: 0 $spacing-unit * 0.7;
+    font-style: italic;
+  }
+  
+  p.post-meta-date {
+    font-weight: bold;
+  }
+  
+  p.post-meta-tags {
+    font-size: $small-font-size;
+  }
+  
+  section.post-content, section.podcast {
+    margin-left: 5%;
+    margin-right: 5%;
+    @extend %vertical-rhythm;
+    
+    h2, h3, h4, h5, h6 {
+      padding-top: $spacing-unit * 1.2;
+    }
+    
+    ul, p, img {
+      padding-top: $spacing-unit * 0.7;
+    }
+    
+    ul, img {
+      padding-bottom: $spacing-unit * 0.5;
+    }
+    
+    img {
+      display: block;
+    }
+    
+    :first-child {
+      padding-top: 0px;
+    }
+    
+    h3, h4, h5, h6, ul, img {
+      padding-left: $spacing-unit * 0.7;
+      padding-right: $spacing-unit * 0.7;
+    }
+    
+    li {
+      padding-top: $spacing-unit * 0.5;
+      list-style-type: circle;
+    }
+    
+    li:first-child {
+      padding-top: 0;
+    }
+  }
+  
+  aside.posts {
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+    @extend %border-radius;
+    
+    h2 {
+      padding: $spacing-unit * 0.7 $spacing-unit * 0.35;
+      background-color: $color1;
+      font-size: 125%;
+      text-align: center;
+      @extend %vertical-rhythm;
+    }
+  }
+  
+  a.posts-button-up, a.posts-button-down {
+    display: block;
+    width: 100%;
+    height: $nav-height / 2;
+    padding: $nav-height / 4 0;
+    //border-top: $border-medium solid $brand-color;
+    background-color: $color1;
+    color: $brand-color;
+    font-size: $nav-height / 2;
+    font-weight: 900;
+    text-align: center;
+    
+    &:hover, &:active {
+      background-color: $color4;
+      text-decoration: none;
+    }
+  }
+  
+  a.posts-button-up {
+    //border-bottom: $border-medium solid $brand-color;
+    @extend %vertical-rhythm;
+  }
+  
+  a.posts-button-down {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  
+  div.posts-overflow {
+    overflow: hidden;
+  }
+  
+  div.posts-container {
+    position: relative;
+    top: 0px;
+    @include transition($transition-speed-normal, top);
+  }
+  
+  a.posts-post {
+    display: block;
+    margin-left: 5%;
+    margin-right: 5%;
+    @extend %vertical-rhythm;
+    
+    img {
+      display: block;
+      width: 65%;
+      max-width: $max-thumbnail-width;
+      //height: 60px;
+      margin: 0 auto;
+    }
+    
+    p {
+      text-align: center;
+    }
+    
+    &:hover, &:active {
+      background-color: $color4;
+      color: $text-color;
+      text-decoration: none;
+    }
+  }
+  
+  footer.post-footer {
+    margin: 0 5%;
+    padding-bottom: $spacing-unit;
+    @extend %clearfix;
+    
+    hr {
+      clear: both;
+      width: 230px;
+      max-width: 100%;
+      margin: 0 auto $spacing-unit * 1.3 auto;
+      color: $brand-color;
+    }
+  }
+  
+  div.post-footer-share {
+    float: right;
+    margin-bottom: $spacing-unit * 1.3;
+    @extend %clearfix;
+    
+    p {
+      float: left;
+      font-style: italic;
+      text-align: right;
+    }
+    
+    ul.social-icons {
+      float: left;
+      @extend %clearfix;
+      
+      li {
+        float: left;
+        margin-left: $social-icons-spacing;
+      }
+    }
+  }
+  
+  p.post-footer-authorword {
+    @extend %vertical-rhythm;
+  }
+  
+  img.post-footer-image {
+    float: left;
+    width: 20%;
+    min-width: 80px;
+  }
+  
+  div.post-footer-author {
+    overflow: hidden;
+    padding: 0 2%;
+  }
+  
+  p.post-footer-author-name, p.post-footer-author-role {
+    padding: $spacing-unit * 0.4 0;
+  }
+  
+  p.post-footer-author-name {
+    font-weight: bold;
+  }
+  
+  @include media-less-than($medium-size) {
+    header.post-header ul.social-icons {
+      float: none;
+      width: $social-icons * ($icon-size + 5px) + $social-icons-spacing * $social-icons;
+      max-width: 100%;
+      margin: 0 auto $spacing-unit auto;
+    }
+  }
+  
+  @include media-less-than($small-size) {
+    article.post {
+      width: 100%;
+      margin-left: 0%;
+      border-bottom-left-radius: $border-radius;
+      border-bottom-right-radius: $border-radius;
+      margin-bottom: $spacing-unit;
+    }
+    
+    img.post-main-image {
+      margin-bottom: $spacing-unit;
+    }
+    
+    section.post-content, section.podcast {
+      h2, h3, h4, h5, h6 {
+        padding-top: $spacing-unit;
+      }
+      
+      ul, p, img {
+        padding-top: $spacing-unit * 0.5;
+      }
+      
+      ul, img {
+        padding-bottom: $spacing-unit * 0.3;
+      }
+      
+      h3, h4, h5, h6, ul, img {
+        padding-left: $spacing-unit * 0.5;
+        padding-right: $spacing-unit * 0.5;
+      }
+      
+      li {
+        padding-top: $spacing-unit * 0.3;
+      }
+    }
+    
+    aside.posts {
+      clear: both;
+      margin-bottom: $spacing-unit;
+    }
+    
+    div.post-footer-share ul.social-icons li {
+      margin-left: $social-icons-spacing / 2;
+    }
+  }
+}

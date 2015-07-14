@@ -1,0 +1,37 @@
+<footer class="site-footer">
+<div class="content">
+	
+	<nav class="site-menu">
+		<ul class="menu-items">
+			<li><a href="{{ site.baseurl }}/">home</a></li>
+			<li><a href="{{ site.baseurl }}/games">games</a></li>
+			<li><a href="{{ site.baseurl }}/blog">blog</a></li>
+			<li><a href="{{ site.baseurl }}/podcasts">podcasts</a></li>
+		</ul>
+	</nav>
+	
+	<ul class="social-icons">
+		<li><a title="Facebook page" rel="external" href="//www.facebook.com/{{ site.facebook_username }}">
+			{% include icons.html icon='facebook' %}
+		</a></li>
+		<li><a title="Twitter page" rel="external" href="//www.twitter.com/{{ site.twitter_username }}">
+			{% include icons.html icon='twitter' %}
+		</a></li>
+		<li><a title="YouTube page" rel="external" href="//www.youtube.com/{{ site.youtube_username }}">
+			{% include icons.html icon='youtube' %}
+		</a></li>
+		<li><a title="Google+ page" rel="external" href="//plus.google.com/+{{ site.youtube_username }}">
+			{% include icons.html icon='googlep' %}
+		</a></li>
+		<li><a title="Patreon page" rel="external" href="//www.patreon.com/{{ site.patreon_username }}">
+			{% include icons.html icon='patreon' %}
+		</a></li>
+	</ul>
+	
+	<p class="copyright">
+		Copyright &copy; 2015 Juan Carlos Niño, all rights reserved. Contact us at <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+	</p>
+</div>
+</footer>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="{{ site.baseurl}}/scripts/layout.js"></script>

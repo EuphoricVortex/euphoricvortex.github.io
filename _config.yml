@@ -1,0 +1,108 @@
+# Handling Reading
+#safe: false
+#include: [".htaccess"]
+exclude: 
+  - "*.ai"
+  - ".project"
+  - README.md
+#  - Fluffy_v_0_1_0
+#  - Fluffy_v_0_2_3
+#  - Fluffy_v_0_3_0
+#  - Fluffy_v_0_4_0
+#keep_files: [".git", ".svn"]
+#encoding: "utf-8"
+#markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+# Outputting
+timezone: America/Bogota
+permalink: /:categories/:year-:month-:day/:title/
+#   "" | date | pretty | ordinal | none | /:categories/:short_year-:month-:day/:title/ (posts) | /:path/:basename:output_ext (pages)
+defaults:
+  -
+    scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      categories:
+        - blog
+      image: /blog_default.png
+      thumbnail: /blog_default_thumbnail.png
+  -
+    scope:
+      path: ""
+      type: games
+    values:
+      layout: game
+      thumbnail: /game_thumbnail.png
+      hints:
+        - None so far!
+      cheats:
+        - None so far!
+  -
+    scope:
+      path: ""
+      type: podcasts
+    values:
+      layout: podcast
+      hidden: true
+      thumbnail: /blog_default_thumbnail.png
+#  -
+#    scope:
+#      path: "" # an empty string here means all files in the project
+#      type: pages | posts | drafts | other_collections
+#    values:
+#      layout: post
+#      published: true # Set to false if you don’t want a specific post to show up when the site is generated.
+#      categories:
+#        - one
+#        - two
+#      tags: some tags separated by spaces
+#      other_liquid_vars: "Whatever"
+
+# Site settings
+title: Euphoric Vortex
+email: info@euphoricvortex.co
+description: > # this means to ignore newlines until "baseurl:"
+  We are a friendly video game maker group willing to deliver
+  deep emotions and pleasing social moments.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://www.euphoricvortex.co" # the base hostname & protocol for your site
+port: 80
+#source: source
+#destination: destination
+
+# Build settings
+markdown: kramdown
+highlighter: pygments
+
+# Kramdown (Markdown Processor)
+kramdown:
+  input: GFM # Github Flavored Markdown
+  syntax_highlighter: pygments # Needed for fenced code blocks with ~~~
+
+# Blogs
+#excerpt_separator: "\n\n" # Used to detect when the blog's excerpt finishes.
+
+# Collections
+collections:
+  games:
+    output: true # set to true to export the collection as html. Otherwise, use it as data inside other places.
+    permalink: /:collection/:path/ # _games/subdir/file1.md will output as <dst>/games/subdir/file1/index.html .
+#                                    default is /:collection/:path
+  podcasts:
+    output: true
+    permalink: /:collection/:path/
+
+# SASS
+#sass:
+#  sass_dir: _sass
+#  style: :nested | :expanded | :compact | :compressed
+
+# Custom vars
+facebook_username: EuphoricVortex
+twitter_username: EuphoricVortex
+youtube_username: EuphoricVortexOfficial
+patreon_username: EuphoricVortex
+github_username: EuphoricVortex
+motto: Gaming moments can be better.

@@ -1,0 +1,21 @@
+.social-icons {
+  $png-columns: 3;
+  $png-icon-size: 25px;
+  $platforms: map-keys($platform-colors);
+  
+  svg {
+    display: inline-block;
+    width: $png-icon-size;
+    height: $png-icon-size;
+    background: url($imgpath+"/icon_all.png") no-repeat;
+    vertical-align: middle;
+  }
+  
+  @for $platform from 1 through length($platforms) {
+    .icon-#{nth($platforms, $platform)} {
+      background-position: join(
+        (-$png-icon-size * (($platform - 1) % $png-columns)),
+        (-$png-icon-size * floor(($platform - 1) / $png-columns)), space);
+    }
+  }
+}

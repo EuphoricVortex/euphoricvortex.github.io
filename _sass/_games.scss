@@ -1,0 +1,307 @@
+/**
+ *   Games layout.
+ */
+@include scope() {
+  $nav-height: 90px;
+  $nav-button-width: 6%;
+  $max-games: 20;
+  $max-screenshots: 20;
+  $max-screenshot-width: 800px;
+  $scrollbar-height: 25px;
+  $screenshot-height: 300px;
+  
+  .games {
+    position: relative;
+    overflow: hidden;
+    background-color: $color1;
+    @extend %border-radius;
+    @extend %vertical-rhythm;
+  }
+  
+  a.games-button-left, a.games-button-right {
+    position: absolute;
+    top: 0;
+    padding: $nav-height / 3 $nav-button-width / 3;
+    width: $nav-button-width / 3;
+    height: $nav-height/3;
+    background-color: $color1;
+    color: $brand-color;
+    font-size: 125%;
+    font-weight: 900;
+    
+    &:hover, &:active {
+      background-color: $color3;
+      text-decoration: none;
+    }
+  }
+  
+  a.games-button-left {
+    left: 0;
+    border-right: $border-medium solid $brand-color;
+  }
+  
+  a.games-button-right {
+    right: 0;
+    border-left: $border-medium solid $brand-color;
+  }
+  
+  div.games-overflow {
+    position: relative;
+    left: $nav-button-width;
+    width: $max-games * 100%;
+    @include transition($transition-speed-normal, left);
+    @extend %clearfix;
+  }
+  
+  .games-game {
+    position: relative;
+    float: left;
+    width: (25% - $nav-button-width / 2) / $max-games;
+    height: $nav-height;
+    
+    img {
+      display: block;
+      width: $nav-height * 0.889;
+      height: $nav-height * 0.667;
+      margin: 0 auto;
+    }
+    
+    p {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      color: $text-color;
+      background-color: $color1;
+      font-weight: bold;
+      text-align: center;
+    }
+    
+    &:hover, &:active {
+      background-color: $color3;
+      text-decoration: none;
+      
+      p {
+        background-color: $color3;
+      }
+    }
+  }
+  
+  @include media-less-than($small-size) {
+    .games-game {
+      width: (50% - $nav-button-width) / $max-games;
+    }
+  }
+  
+  @include media-less-than($tiny-size) {
+    a.games-button-left, a.games-button-right {
+      padding: $nav-height / 3 $nav-button-width * 2 / 3;
+      width: $nav-button-width * 2 / 3;
+    }
+    
+    div.games-overflow {
+      left: $nav-button-width * 2;
+    }
+    
+    .games-game {
+      width: (100% - $nav-button-width * 4) / $max-games;
+    }
+  }
+  
+  .game-title {
+    display: table;
+    overflow: hidden;
+    width: 100%;
+    @extend %border-radius;
+    @extend %vertical-rhythm;
+    
+    h1 {
+      display: table-cell;
+      padding: $spacing-unit / 3;
+      background-color: $brand-color;
+      color: $color2;
+      text-align: center;
+      vertical-align: middle;
+    }
+  
+    a.game-button-play {
+      display: table-cell;
+      width: 25%;
+      padding: $spacing-unit / 3;
+      background-color: $color4;
+      color: $text-color;
+      font-family: $title-font-family;
+      font-size: 125%;
+      text-align: center;
+      vertical-align: middle;
+      
+      &:hover, &:active {
+        background-color: $color1;
+        text-decoration: none;
+      }
+    }
+  }
+  
+  .game-about, .game-hints, .game-cheats, .game-devlog {
+    overflow: hidden;
+    background-color: white;
+    @extend %border-radius;
+    @extend %vertical-rhythm;
+    
+    h3, ul {
+      @extend %vertical-rhythm;
+    }
+    
+    h2 {
+      padding: $spacing-unit * 0.7;
+      background-color: $color1;
+      text-align: center;
+    }
+    
+    h3 {
+      padding-left: $spacing-unit * 1.5;
+      padding-right: $spacing-unit * 0.7;
+    }
+    
+    ul {
+      padding: 0 $spacing-unit * 0.7;
+    }
+    
+    li {
+      padding-top: $spacing-unit * 0.7;
+      list-style-type: circle;
+    }
+    
+    li:first-child {
+      padding-top: 0;
+    }
+  }
+  
+  .game-about {
+    @extend %clearfix;
+  }
+  
+  .game-hints, .game-cheats, .game-devlog {
+    h2 {
+      @extend %vertical-rhythm;
+    }
+  }
+  
+  .game-devlog {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-bottom: 0;
+    padding-bottom: $spacing-unit;
+  }
+  
+  .game-about-images {
+    position: relative;
+    float: right;
+    width: 65%;
+    max-width: $max-screenshot-width;
+    height: $screenshot-height + $scrollbar-height;
+    overflow: hidden;
+    
+    img, iframe {
+      display: block;
+      float: left;
+      width: 100% / $max-screenshots;
+      height: $screenshot-height;
+    }
+    
+    @include media-less-than($small-size) {
+      width: 100%;
+    }
+  }
+  
+  div.game-about-images-container {
+    position: relative;
+    left: 0%;
+    width: $max-screenshots * 100%;
+    height: $screenshot-height;
+    border-left: $border-thin solid $color-grey-light;
+    @extend %clearfix;
+    
+    &.with-transition {
+      @include transition($transition-speed-fast, left);
+    }
+  }
+  
+  div.game-about-images-sliderleft, div.game-about-images-sliderright {
+    width: $nav-icon-size;
+    height: $nav-icon-size;
+    padding: ($scrollbar-height - $nav-icon-size) / 2;
+    background-color: $color4;
+    cursor: pointer;
+    @extend %border-radius;
+    
+    &:hover, &:active {
+      background-color: $color1;
+    }
+    
+    div {
+      width: $nav-icon-size;
+      height: $nav-icon-size;
+      background: url($imgpath+"/nav_icons.png") no-repeat;
+    }
+  }
+  
+  div.game-about-images-sliderleft {
+    float: left;
+    margin-right: 2px;
+  }
+  
+  div.game-about-images-sliderright {
+    float: right;
+    margin-left: 2px;
+    div {
+      background-position: -$nav-icon-size 0;
+    }
+  }
+  
+  div.game-about-images-sliderbg {
+    position: relative;
+    overflow: hidden;
+    height: $scrollbar-height;
+    background-color: $color-grey-light;
+    @extend %border-radius;
+  }
+  
+  div.game-about-images-slider {
+    position: relative;
+    left: 0%;
+    width: 10%;
+    height: $scrollbar-height;
+    background-color: $color4;
+    cursor: pointer;
+    @extend %border-radius;
+    
+    &:hover, &:active {
+      background-color: $color1;
+    }
+  }
+  
+  div.game-about-content {
+    overflow: hidden;
+    height: $screenshot-height - $scrollbar-height;
+    padding: $scrollbar-height $spacing-unit * 0.7;
+    //background-color: $color3;
+    
+    p {
+      margin-top: $spacing-unit / 2;
+    }
+    
+    p:first-child {
+      margin-top: 0px;
+    }
+  }
+  
+  @include media-less-than($small-size) {
+    .game-about-images {
+      width: 100%;
+    }
+    
+    div.game-about-content {
+      height: auto;
+    }
+  }
+}
