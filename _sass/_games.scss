@@ -141,6 +141,13 @@
     }
   }
   
+  p.unreleased {
+    //font-size: $small-font-size;
+    font-weight: bold;
+    color: firebrick;
+    text-align: center;
+  }
+  
   .game-about, .game-hints, .game-cheats, .game-devlog {
     overflow: hidden;
     background-color: white;

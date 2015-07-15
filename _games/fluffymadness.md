@@ -68,6 +68,7 @@ devlog:
 web_link: //fluffymadness.parseapp.com/demo/
 #android_link: //insert.android.link.here/
 #ios_link: //insert.ios.link.here/
+unreleased: true
 ---
 Become the best store owner of the world by pleasing an endless wave of mad customers.
 

@@ -19,6 +19,8 @@ styles:
 	<a class="game-button-play" href="#">Play</a>
 </header>
 
+{% if page.unreleased %}<p class="unreleased">(Unreleased. Early access available <a
+	href="{{ '//www.patreon.com/' | append: site.patreon_username }}">for patrons only</a>)</p>{% endif %}
 <section class="game-about">
 	<h2>About the game</h2>
 	{% assign b1 = page.videos and page.videos.size > 0 %}{% assign b2 = page.images and page.images.size > 0 %}

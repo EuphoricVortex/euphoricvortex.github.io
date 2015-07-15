@@ -501,7 +501,7 @@ var layout = (function layoutIIFE () {
 				else
 					_optimalImageHeight = _maxImageHeight;
 				children = _coolBackground.children();
-				rightImageCount = 0 | ($("body").height() * _backgroundSpeed * 2 / _optimalImageHeight) + 1;
+				rightImageCount = Math.min(_numImages, 0 | ($("body").height() * _backgroundSpeed * 2 / _optimalImageHeight) + 1);
 				
 				while (_currentImages > rightImageCount) {
 					children.eq(--_currentImages).remove();
