@@ -12,13 +12,30 @@ images:
 thumbnail: /fluffy_thumbnail.png
 hints:
   - Deliver to customers simultaneously. Don't focus on only one client.
-  - The monsters in a single order don't have to be delivered in sequence.
+  - The monsters of a single order don't have to be delivered in sequence.
   - If the clients give you a rest, focus on distributing the monsters around to access them easily.
   - Difficulty increases with time, so finishing orders quickly at the beginning guarantees that more (easy) customers will show before the game gets harder. You will also get more free time to do the previous point.
+  - In multiplayer, efficient communication between the two players really makes things easier. Don't just build monsters randomly, and try to organize yourselves.
 cheats:
   - We have not added any cheats yet.
   - Yes, we will add cheats, but nothing that makes the game unfair to non-cheaters.
 devlog:
+  -
+    date: 2015-11-27
+    events:
+      - The store was added with Facebook payments (although mobile payments have not been optimized yet) and group purchases.
+      - The monsters' animations were improved to make them crush when squeezed.
+      - The internal currency was halved. Now everything costs and gives you half of what it did before.
+      - A "share" button is added when you reach a new highscore.
+      - We improved the multiplayer tutorial experience.
+      - The visual style of the gallery was also improved.
+      - The initial loading is now a little bit faster.
+  -
+    date: 2015-10-08
+    events:
+      - Multiplayer mode successfully works in mobile and is disabled in web.
+      - Made the Leaderboard screen show the friends' profile pictures.
+      - A workaround was made so the internet connection is better detected, allowing offline play to work as expected (it crashed before). We tried fixing this issue directly instead of using a workaround and, after 5 weeks of 100% time into the subject, we failed.
   -
     date: 2015-07-13
     events:

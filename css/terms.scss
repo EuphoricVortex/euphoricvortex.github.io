@@ -1,0 +1,53 @@
+---
+---
+@charset "utf-8";
+
+// Processed variables.
+$imgpath: "{{ site.baseurl }}/images";
+
+// Import partials in order.
+@import "vars", "base";
+
+.terms {
+  overflow: hidden;
+  background-color: white;
+  @extend %border-radius;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  padding-bottom: $spacing-unit;
+  
+  h1, h2, h3, h4, ul, ol, p {
+    @extend %vertical-rhythm;
+  }
+  
+  h1 {
+    padding: $spacing-unit * 0.7;
+    background-color: $color1;
+    text-align: center;
+  }
+  
+  h2 {
+    padding-left: $spacing-unit * 2.5;
+    padding-right: $spacing-unit * 1.7;
+  }
+  
+  h3, h4, p {
+    padding: 0 $spacing-unit;
+  }
+  
+  ul, ol {
+    padding: 0 $spacing-unit * 1.7;
+  }
+  
+  li {
+    padding-top: $spacing-unit * 0.7;
+  }
+  
+  ul li {
+    list-style-type: circle;
+  }
+  
+  li:first-child {
+    padding-top: 0;
+  }
+}

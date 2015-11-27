@@ -5,10 +5,12 @@ exclude:
   - "*.ai"
   - ".project"
   - README.md
+  - mail_templates
 #  - Fluffy_v_0_1_0
 #  - Fluffy_v_0_2_3
 #  - Fluffy_v_0_3_0
 #  - Fluffy_v_0_4_0
+#  - Fluffy_v_0_5_2
 #keep_files: [".git", ".svn"]
 #encoding: "utf-8"
 #markdown_ext: "markdown,mkdown,mkdn,mkd,md"
