@@ -30,7 +30,7 @@ devlog:
       - We improved the multiplayer tutorial experience.
       - The visual style of the gallery was also improved.
       - The initial loading is now a little bit faster.
-      - The first public beta was released.
+      - The first public beta was released in Colombia only.
   -
     date: 2015-10-08
     events:
