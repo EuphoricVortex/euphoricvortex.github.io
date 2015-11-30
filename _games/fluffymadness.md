@@ -21,15 +21,16 @@ cheats:
   - Yes, we will add cheats, but nothing that makes the game unfair to non-cheaters.
 devlog:
   -
-    date: 2015-11-27
+    date: 2015-11-30
     events:
       - The store was added with Facebook payments (although mobile payments have not been optimized yet) and group purchases.
       - The monsters' animations were improved to make them crush when squeezed.
       - The internal currency was halved. Now everything costs and gives you half of what it did before.
-      - A "share" button is added when you reach a new highscore.
+      - A "share" button shows when you reach a new highscore.
       - We improved the multiplayer tutorial experience.
       - The visual style of the gallery was also improved.
       - The initial loading is now a little bit faster.
+      - The first public beta was released.
   -
     date: 2015-10-08
     events:
