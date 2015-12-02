@@ -4,11 +4,11 @@ description: The store has too many customers! Can you deliver all the pet monst
 #videos:
 #  - aOw9nrRCOW0
 images:
-  - /fluffy_shot1.jpg
-  - /fluffy_shot2.jpg
-  - /fluffy_shot3.jpg
-  - /fluffy_shot4.jpg
-  - /fluffy_shot5.jpg
+  - /fluffy_shot1.png
+  - /fluffy_shot2.png
+  - /fluffy_shot3.png
+  - /fluffy_shot4.png
+  - /fluffy_shot5.png
 thumbnail: /fluffy_thumbnail.png
 hints:
   - Deliver to customers simultaneously. Don't focus on only one client.
@@ -88,6 +88,6 @@ web_link: //fluffymadness.parseapp.com/demo/
 #ios_link: //insert.ios.link.here/
 unreleased: true
 ---
-Become the best store owner of the world by pleasing an endless wave of mad customers.
+Become the best store seller of the world by pleasing an endless wave of mad customers.
 
 Luckily, you have an unlimited inventory of fluffy pet monsters to satisfy their needs!
