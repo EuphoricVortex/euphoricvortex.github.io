@@ -119,6 +119,29 @@ iframe {
   max-width: 100%;
 }
 
+/*
+ * Forms.
+ */
+form {
+  padding: 0 $spacing-unit;
+}
+
+label {
+  display: block;
+  font-style: italic;
+  color: $color-grey;
+  @extend %vertical-rhythm;
+}
+
+textarea {
+  display: block;
+  width: 300px;
+  
+  @include media-less-than($small-size) {
+    width: 90%;
+  }
+}
+
 div.content {
   width: 80%;
   min-width: $medium-size - $spacing-unit * 2 - 30px;

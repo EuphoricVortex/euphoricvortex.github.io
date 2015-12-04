@@ -1,0 +1,87 @@
+---
+layout: default
+styles:
+  - terms.css
+permalink: /feedback/
+title: Send feedback
+description: Send us any feedback. We really appreciate it!
+default_comment: Give us your comment here.
+---
+<section class="terms">
+<h1>{{ page.title }}</h1>
+<p>{{ page.description }}</p>
+<form action="javascript:sendFeedback()" id="feedbackForm">
+	<label>For which service?
+	<select name="service" id="service">
+		<option value="None">None</option>
+		<optgroup label="Games">{% for game in site.games %}
+			<option value="{{ game.title }}">{{ game.title }}</option>{% endfor %}
+		</optgroup>
+	</select></label>
+	<label>Give us your e-mail (optionally) if you want us to contact you back:
+	<input type="email" name="email" id="email" /></label>
+	<label>What do you want to tell us?
+	<textarea name="comment" id="comment" rows="5">{{ page.default_comment }}</textarea></label>
+	<input type="submit" value="Send" />
+</form>
+<p id="response" style="margin-top: 20px;"></p>
+</section>
+<script>
+	//<!--
+	function sendFeedback () {
+		var comment = $("#feedbackForm #comment").get(0),
+			email = $("#feedbackForm #email").get(0),
+			missing,
+			response = $("#response"),
+			service = $("#feedbackForm #service").get(0);
+		
+		if (!service.value)
+			missing = "service";
+		else if (!comment.value || comment.value === "{{ page.default_comment }}")
+			missing = "comment";
+		
+		if (missing) {
+			response.text("Please, fill in the "+missing+" field!");
+			response.css("color", "red");
+		} else {
+			comment.disabled = true;
+			email.disabled = true;
+			service.disabled = true;
+			response.text("One moment, please!");
+			response.css("color", "darkorange");
+			$.ajax("https://fluffymadness.parseapp.com/feedback", {
+				data : {
+					"comment" : comment.value,
+					"email" : email.value,
+					"service" : service.value
+				},
+				timeout : 7000
+			}).always(function processResponse (xhrOrData, statusText, xhrOrError) {
+				var color, message, status = xhrOrData.status || xhrOrError.status;
+				
+				switch (status) {
+					case 200:
+						color = "green";
+						message = "Feedback sent successfully!";
+						break;
+					case 403:
+						color = "red";
+						message = "Error: An invalid feedback was sent!";
+						break;
+					case 500:
+					default:
+						color = "red";
+						message = "Error: Our servers may be busy. Try again later!";
+						break;
+				}
+				
+				response.text(message);
+				response.css("color", color);
+				comment.disabled = false;
+				email.disabled = false;
+				service.disabled = false;
+			});
+		}
+	}
+	//-->
+</script>
