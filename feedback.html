@@ -51,6 +51,7 @@ default_comment: Give us your comment here.
 			response.text("One moment, please!");
 			response.css("color", "darkorange");
 			$.ajax("https://fluffymadness.parseapp.com/feedback", {
+				type: "POST",
 				data : {
 					"comment" : comment.value,
 					"email" : email.value,
