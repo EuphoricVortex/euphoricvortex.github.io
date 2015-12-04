@@ -21,7 +21,8 @@ default_comment: Give us your comment here.
 	<label>Give us your e-mail (optionally) if you want us to contact you back:
 	<input type="email" name="email" id="email" /></label>
 	<label>What do you want to tell us?
-	<textarea name="comment" id="comment" rows="5">{{ page.default_comment }}</textarea></label>
+	<textarea name="comment" id="comment" rows="5" onfocus="feedbackCommentFocus()"
+		onblur="feedbackCommentBlur()" style="color: darkgrey;">{{ page.default_comment }}</textarea></label>
 	<input type="submit" value="Send" />
 </form>
 <p id="response" style="margin-top: 20px;"></p>
@@ -81,6 +82,24 @@ default_comment: Give us your comment here.
 				email.disabled = false;
 				service.disabled = false;
 			});
+		}
+	}
+	
+	function feedbackCommentFocus () {
+		var comment = $("#feedbackForm #comment");
+		
+		if (comment.get(0).value === "{{ page.default_comment }}")
+			comment.get(0).value = "";
+		
+		comment.css("color", "black");
+	}
+	
+	function feedbackCommentBlur () {
+		var comment = $("#feedbackForm #comment");
+		
+		if (comment.get(0).value === "") {
+			comment.get(0).value = "{{ page.default_comment }}";
+			comment.css("color", "darkgrey");
 		}
 	}
 	//-->
