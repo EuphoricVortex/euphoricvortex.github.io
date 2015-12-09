@@ -13,6 +13,7 @@ thumbnail: /fluffy_thumbnail.png
 hints:
   - Deliver to customers simultaneously. Don't focus on only one client.
   - The monsters of a single order don't have to be delivered in sequence.
+  - Try to count how many monsters of a single color are in each customer to deliver them faster.
   - If the clients give you a rest, focus on distributing the monsters around to access them easily.
   - Difficulty increases with time, so finishing orders quickly at the beginning guarantees that more (easy) customers will show before the game gets harder. You will also get more free time to do the previous point.
   - In multiplayer, efficient communication between the two players really makes things easier. Don't just build monsters randomly, and try to organize yourselves.
@@ -83,7 +84,7 @@ devlog:
     events:
       - We developed the first prototype, including the essential artwork of the characters and core game mechanics.
       - Music for the game was composed.
-web_link: //fluffymadness.parseapp.com/demo/
+web_link: //apps.facebook.com/fluffymadness
 #android_link: //insert.android.link.here/
 #ios_link: //insert.ios.link.here/
 unreleased: true
