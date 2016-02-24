@@ -22,6 +22,17 @@ cheats:
   - Yes, we will add cheats, but nothing that makes the game unfair to non-cheaters.
 devlog:
   -
+    date: 2016-02-19
+    events:
+      - Special clients were added: a wealthy client and a thief.
+      - We modified the initial game tutorial, both for single and multiplayer.
+      - The difficulty was substantially increased, both for PCs and mobile devices.
+      - "Losing a life" is now more evident in-game.
+      - A "reset" button was added in the Play Configuration screen.
+      - The game wouldn't work for PCs and devices without local cache. Now it works (although it obviously doesn't save progress locally).
+      - We removed the share button as it doesn't work globally yet.
+      - Other minor fixes.
+  -
     date: 2015-11-30
     events:
       - The store was added with Facebook payments (although mobile payments have not been optimized yet) and group purchases.
