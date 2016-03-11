@@ -22,6 +22,20 @@ cheats:
   - Yes, we will add cheats, but nothing that makes the game unfair to non-cheaters.
 devlog:
   -
+    date: 2016-03-11
+    events:
+      - The first tutorial of the game is now shorter.
+      - We added new tutorials to show each special monster you unlock.
+      - Now levels have names. Your progress through levels now gives you ranks.
+      - The objectives were modified to reach each level and we added a different set of objectives for mobile.
+      - Difficulty was increased again, especially for mobile.
+      - The effects of the special monsters are more attractive with new animations and sounds.
+      - "A \"crowd\" animation appears behind the clients that grows bigger as time passes by."
+      - The pause button was changed.
+      - We heavily modified the game over screen. It is now way more engaging and clear.
+      - Before, when you lost a match, you would lose every monster you bought. Now you will recover any monster that didn't show up. You will still lose any monster that appears and you voluntarily leave hanging around.
+      - Other minor fixes.
+  -
     date: 2016-02-19
     events:
       - "Two special clients were added: a wealthy client and a thief."
