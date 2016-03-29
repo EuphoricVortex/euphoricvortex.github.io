@@ -22,6 +22,14 @@ cheats:
   - Yes, we will add cheats, but nothing that makes the game unfair to non-cheaters.
 devlog:
   -
+    date: 2016-03-29
+    events:
+      - Stopped game production and marketing.
+  -
+    date: 2016-03-15
+    events:
+      - Launched the game worldwide.
+  -
     date: 2016-03-11
     events:
       - The first tutorial of the game is now shorter.
@@ -112,7 +120,7 @@ devlog:
 web_link: //apps.facebook.com/fluffymadness
 #android_link: //insert.android.link.here/
 #ios_link: //insert.ios.link.here/
-unreleased: true
+unreleased: false
 ---
 Become the best store seller of the world by pleasing an endless wave of mad customers.
 

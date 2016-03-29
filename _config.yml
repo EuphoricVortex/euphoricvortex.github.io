@@ -76,12 +76,12 @@ port: 80
 
 # Build settings
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 
 # Kramdown (Markdown Processor)
 kramdown:
   input: GFM # Github Flavored Markdown
-  syntax_highlighter: pygments # Needed for fenced code blocks with ~~~
+  syntax_highlighter: rouge # Needed for fenced code blocks with ~~~
 
 # Blogs
 #excerpt_separator: "\n\n" # Used to detect when the blog's excerpt finishes.
