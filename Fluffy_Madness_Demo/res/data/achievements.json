@@ -1,0 +1,244 @@
+{
+	"level0" : {
+		"achievement1" : {
+			"title" : {
+				"en" : "First sale",
+				"es" : "Primera venta"
+			},
+			"id" : 0,
+			"requirement" : [50],
+			"requirement2" : [50],
+			"prize" : [0, 100]
+		},
+		"name" : {
+			"en" : ""
+		},
+		"prize" : [2, 8]
+	},
+	"level1" : {
+		"achievement1" : {
+			"title" : {
+				"en" : "Novice",
+				"es" : "Novato"
+			},
+			"id" : 1,
+			"requirement" : [4],
+			"requirement2" : [3],
+			"prize" : [0, 100]
+		},
+		"name" : {
+			"en" : "Junior salesman",
+			"es" : "Vendedor junior"
+		},
+		"prize" : [1, 8, 3]
+	},
+	"level2" : {
+		"achievement1" : {
+			"title" : {
+				"en" : "Better sales",
+				"es" : "Más ventas"
+			},
+			"id" : 0,
+			"requirement" : [4000],
+			"requirement2" : [3500],
+			"prize" : [0, 250]
+		},
+		"achievement2" : {
+			"title" : {
+				"en" : "Determined",
+				"es" : "Firme"
+			},
+			"id" : 1,
+			"requirement" : [6],
+			"requirement2" : [5],
+			"prize" : [0, 250]
+		},
+		"name" : {
+			"en" : "Senior salesman",
+			"es" : "Vendedor senior"
+		},
+		"prize" : [2, 10]
+	},
+	"level3" : {
+		"achievement1" : {
+			"title" : {
+				"en" : "Client service",
+				"es" : "Atención al cliente"
+			},
+			"id" : 5,
+			"requirement" : [25],
+			"requirement2" : [25],
+			"prize" : [0, 350]
+		},
+		"achievement2" : {
+			"title" : {
+				"en" : "Fast sales",
+				"es" : "Ventas ágiles"
+			},
+			"id" : 2,
+			"requirement" : [5000, 7],
+			"requirement2" : [4000, 6],
+			"prize" : [0, 350]
+		},
+		"name" : {
+			"en" : "Star salesman",
+			"es" : "Vendedor estrella"
+		},
+		"prize" : [1, 10, 3]
+	},
+	"level4" : {
+		"achievement1" : {
+			"title" : {
+				"en" : "Insatiable",
+				"es" : "Insaciable"
+			},
+			"id" : 0,
+			"requirement" : [7000],
+			"requirement2" : [6000],
+			"prize" : [0, 1000]
+		},
+		"achievement2" : {
+			"title" : {
+				"en" : "Preferential treatment",
+				"es" : "Trato preferencial"
+			},
+			"id" : 4,
+			"requirement" : [4],
+			"requirement2" : [4],
+			"prize" : [0, 1000]
+		},
+		"achievement3" : {
+			"title" : {
+				"en" : "Persistent",
+				"es" : "Perseverante"
+			},
+			"id" : 1,
+			"requirement" : [8],
+			"requirement2" : [6],
+			"prize" : [0, 1000]
+		},
+		"name" : {
+			"en" : "Supervisor",
+			"es" : "Supervisor"
+		},
+		"prize" : [2, 9]
+	},
+	"level5" : {
+		"achievement1" : {
+			"title" : {
+				"en" : "No spots",
+				"es" : "Sin manchas"
+			},
+			"id" : 3,
+			"requirement" : [8, 8],
+			"requirement2" : [6, 8],
+			"prize" : [1, 8, 5]
+		},
+		"achievement2" : {
+			"title" : {
+				"en" : "Tenacious",
+				"es" : "Constante"
+			},
+			"id" : 1,
+			"requirement" : [10],
+			"requirement2" : [8],
+			"prize" : [0, 1500]
+		},
+		"achievement3" : {
+			"title" : {
+				"en" : "Hasty",
+				"es" : "Apresurado"
+			},
+			"id" : 2,
+			"requirement" : [9000, 8],
+			"requirement2" : [8000, 6],
+			"prize" : [0, 1500]
+		},
+		"name" : {
+			"en" : "Sales chief",
+			"es" : "Jefe de ventas"
+		},
+		"prize" : [0, 25000]
+	},
+	"level6" : {
+		"achievement1" : {
+			"title" : {
+				"en" : "Popular",
+				"es" : "Popular"
+			},
+			"id" : 5,
+			"requirement" : [40],
+			"requirement2" : [40],
+			"prize" : [0, 2500]
+		},
+		"achievement2" : {
+			"title" : {
+				"en" : "Premium service",
+				"es" : "Servicio exclusivo"
+			},
+			"id" : 4,
+			"requirement" : [8],
+			"requirement2" : [6],
+			"prize" : [0, 5000]
+		},
+		"achievement3" : {
+			"title" : {
+				"en" : "Garage sale",
+				"es" : "Venta de garaje"
+			},
+			"id" : 2,
+			"requirement" : [15000, 10],
+			"requirement2" : [14000, 8],
+			"prize" : [0, 2500]
+		},
+		"name" : {
+			"en" : "Deputy director",
+			"es" : "Subdirector"
+		},
+		"prize" : [2, 11]
+	},
+	"level7" : {
+		"achievement1" : {
+			"title" : {
+				"en" : "I hate pink",
+				"es" : "Odio el rosa"
+			},
+			"id" : 3,
+			"requirement" : [12, 10],
+			"requirement2" : [10, 10],
+			"prize" : [1, 10, 5]
+		},
+		"achievement2" : {
+			"title" : {
+				"en" : "Air freshener",
+				"es" : "Ambientador"
+			},
+			"id" : 3,
+			"requirement" : [12, 9],
+			"requirement2" : [10, 9],
+			"prize" : [1, 9, 5]
+		},
+		"achievement3" : {
+			"title" : {
+				"en" : "It's so hot!",
+				"es" : "¡Qué calor!"
+			},
+			"id" : 3,
+			"requirement" : [12, 11],
+			"requirement2" : [10, 11],
+			"prize" : [1, 11, 5]
+		},
+		"name" : {
+			"en" : "Director",
+			"es" : "Director"
+		},
+		"prize" : [0, 50000]
+	},
+	"level8" : {
+		"name" : {
+			"en" : "Assistant manager",
+			"es" : "Subgerente"
+		},
+		"done" : true
+	}
+}

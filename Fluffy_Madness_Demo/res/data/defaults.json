@@ -1,0 +1,106 @@
+{
+	"BackgroundLayer" : {
+		"color" : {
+			"r" : 242,
+			"g" : 214,
+			"b" : 162
+		},
+		"counterHeight" : 60,
+		"upperSpaceHeight" : 170
+	},
+	
+	"ClientAIComponent" : {
+		"clienteYPos" : 142,
+		"interval" : 29,
+		"interval2" : 22,
+		"intervalBuenoMin" : 30,
+		"intervalBuenoRange" : 10,
+		"intervalMaloMin" : 30,
+		"intervalMaloRange" : 15,
+		"intervalMultiplier" : 1.25,
+		"minTiempoEspera" : 1,
+		"minTiempoEspera2" : 0.8,
+		"numCasillas" : 1,
+		"pedidoMaxSize" : 2,
+		"pedidoMinSize" : 1,
+		"tiempoEsperaBueno" : 5,
+		"tiempoEsperaCliente" : 5,
+		"tiempoEsperaCliente2" : 4.3,
+		"tiempoEsperaMalo" : 5.5,
+		"tiempoEsperaMulti" : 2
+	},
+	
+	"Difficulty" : {
+		"am" : [3, 0, 0.1],
+		"pmax" : [4, 0],
+		"pmin" : [12, 24, 0, 2],
+		"tec" : [6, 5, 0.1],
+		"td" : [3.5],
+		"cc" : [8, 16, 2, 5]
+	},
+	
+	"MonsterAIComponent" : {
+		"anchoMonstruos" : 80,
+		"interval" : 5
+	},
+	
+	"MonsterType" : {
+		"capacidad" : -1,
+		"color" : {
+			"r" : 200,
+			"g" : 200,
+			"b" : 200
+		},
+		"desc" : "",
+		"funcParams" : [],
+		"idFunc" : 0,
+		"idImage" : 0,
+		"name" : "",
+		"peso" : 1,
+		"puntaje" : 50,
+		"shortDesc" : ""
+	},
+	
+	"MusicComponent" : {
+		"interval" : 15,
+		"intro" : 120
+	},
+	
+	"PlayLayer" : {
+		"clientReceiving" : 1.6,
+		"clientSpaceHeight" : 250,
+		"counterSize" : 8,
+		"difficultyInterval" : 5,
+		"difficultyInterval2" : 4,
+		"minAncho" : 60,
+		"pedidosSize" : 8,
+		"tiposDisponibles" : 1,
+		"vidas" : 3
+	},
+	
+	"SecondPlayLayer" : {
+		"colors" : [
+			{
+				"r" : 8,
+				"g" : 213,
+				"b" : 247
+			},
+			{
+				"r" : 250,
+				"g" : 167,
+				"b" : 25
+			},
+			{
+				"r" : 113,
+				"g" : 190,
+				"b" : 68
+			},
+			{
+				"r" : 237,
+				"g" : 28,
+				"b" : 36
+			}
+		],
+		"tiposDisponibles" : 3
+	}
+}

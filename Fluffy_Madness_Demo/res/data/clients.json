@@ -1,0 +1,14 @@
+{
+	"2" : {
+		"image" : 8,
+		"intro" : 1.9,
+		"multiplier" : 0.7,
+		"params" : [4, 5]
+	},
+	"6" : {
+		"image" : 9,
+		"intro" : 1.67,
+		"multiplier" : 0.6,
+		"params" : []
+	}
+}
