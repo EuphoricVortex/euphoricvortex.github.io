@@ -97,9 +97,9 @@ collections:
     permalink: /:collection/:path/
 
 # SASS
-#sass:
+sass:
 #  sass_dir: _sass
-#  style: :nested | :expanded | :compact | :compressed
+  style: :compressed # :nested | :expanded | :compact | :compressed
 
 # Custom vars
 facebook_username: EuphoricVortex

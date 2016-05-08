@@ -1,7 +1,7 @@
 ---
 title: "Nothing yet!"
 description: There's no podcast to show you yet, but there will soon be.
-date: 2015-06-30
+date: 2015-06-30 -0500
 tags:
   - "no"
   - podcast

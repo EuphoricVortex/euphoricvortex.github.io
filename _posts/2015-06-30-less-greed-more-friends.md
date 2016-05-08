@@ -1,6 +1,6 @@
 ---
 title: Want less greedy games and more fun with friends?
-date: 2015-07-13 14:00
+date: 2015-07-13 14:00 -0500
 author: Juan Carlos N.
 tags:
   - presentation

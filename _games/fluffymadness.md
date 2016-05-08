@@ -1,8 +1,9 @@
 ---
 title: Fluffy Madness
 description: The store has too many customers! Can you deliver all the pet monsters they want?
-#videos:
-#  - aOw9nrRCOW0
+videos:
+  - P5ewWO2KEGw
+  - ekndkkvmubQ
 images:
   - /fluffy_shot1.png
   - /fluffy_shot2.png
